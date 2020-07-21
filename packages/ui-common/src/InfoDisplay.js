@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import ListAccounts from './ListAccounts'
 import ShowBalance from './ShowBalance'
 import Showtransactions from './Showtransactions'
+import LoanEligibility from './LoanEligibility'
 import {
   getAccountList,
   getAccountById,
@@ -21,16 +22,22 @@ export default function InfoDisplay({ data = {} }) {
     }
     console.log(data);
     const dispatch = useDispatch()
-    
+    if(data.Data){
     var accounts=data.Data.Account;
     var balance=data.Data.Balance;
     var transaction=data.Data.Transaction;
+    }
+
     if(accounts)
     return <ListAccounts accounts={accounts} />
     else if(balance)
     return <ShowBalance balance={balance} />
     else if(transaction)
     return <Showtransactions transaction={transaction} />
+    else{
+      console.log("Inside credibility", data);
+      return <LoanEligibility data={data}/>
+    }
     
         
 }
