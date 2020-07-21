@@ -31,6 +31,7 @@ Create an enviroment file (.env) file in /packages/web-app folder and add an ent
 
 You can also add an entry for PORT (optional) if facing any issue with port while running the application. This will run your app on the specified port number if added otherwise will point to the default port. 
 
+Strictly run the app in the below port as the redirect uri is configured in port no 4001
 ``` nowrap
 PORT=4001
 REACT_APP_ACCOUNT_ID=11111111
@@ -40,7 +41,7 @@ To run the application, use command:
 ``` nowrap
 npm start
 ```
-
+Not need to connect with mock-server for testing.
 #### Connecting with mock-server
 
 Start the application in one instance with 'npm start' and in another instance, run the below command.
@@ -51,9 +52,11 @@ npm run mock-server
 
 This will stub the rest api calls and return the mock response.
 
+The sdk will be up and running in the backend to connect to the sandbox.
+
 #### Connecting with sdk
 
-Download and setup the sdk code from the [url](https://github.com/HashApithon/openbanking-java-sdk)
+Download and setup the sdk code from the [url](https://github.com/API-Optimists/openbanking-java)
 
 ### Getting familiar with open banking related terms
 
