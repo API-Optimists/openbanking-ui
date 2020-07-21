@@ -15,6 +15,16 @@ export function getAccountList(dispatch) {
     })
 }
 
+export function getCredibility(dispatch) {
+    createRequest(dispatch, '/aisp/credibility', 'GET', null, {}, function (
+        response
+    ) {
+        //callback placeholder where one or multiple actions can be dispatched
+        dispatch(setData(response))
+        
+    })
+}
+
 // get account by id
 export function getAccountById(dispatch, accountId) {
     createRequest(

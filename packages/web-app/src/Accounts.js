@@ -7,6 +7,7 @@ import {
     getAccountTransactions,
     getAccountDirectDebits,
     getAccountProducts,
+    getCredibility,
     getAccountStandingOrders,
 } from '@openbanking/ui-data/lib/services/account-service'
 import InfoDisplay from '@openbanking/ui-common/lib/InfoDisplay'
@@ -60,7 +61,7 @@ const Accounts = () => {
                     </button>
                     <button
                         className="buttonLinks"
-                        onClick={() => getAccountProducts(dispatch, accountId)}
+                        onClick={() => getCredibility(dispatch)}
                     >
                         Check loan eligibility criteria
                     </button>
