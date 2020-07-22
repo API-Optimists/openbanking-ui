@@ -34,17 +34,16 @@ const Dashboard = () => {
       </a>
       <a class="active item">Home</a>
       <a class="item">About</a>
-      <a class="item">Company</a>
-      <a class="item">Careers</a>
+      
       
     </div>
   </div>
 
   <div class="ui text container">
     <h1 class="ui inverted purple header">
-      Imagine-a-Company which gives instant credit scores based on your transactions data. We are here to do that.
+      Imagine-a-Company which gives instant loan eligibility based on your transactions data. We are here to do that.
     </h1>
-    <h2>Get instant credit score free of cost.</h2>
+    <h2>Get instant loan eligibility and know how much you can avail the same.</h2>
     <div class="ui huge primary button" onClick={() => setType('aisp')}>Get Started <i class="right arrow icon"></i></div>
   </div>
 
