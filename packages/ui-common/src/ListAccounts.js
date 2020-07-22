@@ -66,7 +66,7 @@ export default function ListAccounts(props) {
             <br></br>
             <br></br>
             <br></br>
-            <button class="ui violet button">Get your Credit Score by clicking</button>
+            
 
 </div>
         
