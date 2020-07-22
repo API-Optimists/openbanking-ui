@@ -1,6 +1,7 @@
 import React from 'react'
 import './InfoDisplay.css'
 import { useDispatch, useSelector } from 'react-redux'
+import { Alert } from 'reactstrap';
 import {
     getAccountList,
     getAccountById,
@@ -38,9 +39,10 @@ export default function LoanEligibility(props) {
     console.log("Loan eligible"+ loanEligibleFor);
 
     if(loanEligibleFor>0)
-return <div><h1>Eligible for loan with the amount {loanEligibleFor}</h1></div>
+return <Alert color="success">
+<h1>Eligible for loan with the amount £{loanEligibleFor}</h1></Alert>
 else
-return <div><h2>Sorry, with your current transactions, you are not eligible for any loan</h2></div>
+return <Alert color="danger"><h2>Sorry, based on your transactions, you are not eligible for any loan currently</h2></Alert>
     
         
 }

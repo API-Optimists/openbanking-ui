@@ -43,14 +43,7 @@ const Accounts = () => {
                     >
                         Get Account Balances
                     </button>
-                    <button
-                        className="buttonLinks"
-                        onClick={() =>
-                            getAccountDirectDebits(dispatch, accountId)
-                        }
-                    >
-                        Get Account Direct Debits
-                    </button>
+                    
                     <button
                         className="buttonLinks"
                         onClick={() =>
@@ -65,14 +58,7 @@ const Accounts = () => {
                     >
                         Check loan eligibility criteria
                     </button>
-                    <button
-                        className="buttonLinks"
-                        onClick={() =>
-                            getAccountStandingOrders(dispatch, accountId)
-                        }
-                    >
-                        Get Account Standing Orders
-                    </button>
+                    
                 </div>
                 <div className="displayInfo">
                     <InfoDisplay data={data} />
